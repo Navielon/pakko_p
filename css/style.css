@@ -445,21 +445,21 @@ footer {
   width: 28.75rem;
 }
 
-.no-webp .tarifs__item-titles{
-  background-image: url(../img/frame__01.png); }
-
 .tarifs__item-titles {
+  background-image: url(../img/frame__01.webp);
   height: 15.625rem;
   width: 28.75rem;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.no-webp .tarifs__item-titles-b{
-  background-image: url(../img/frame__02.png); }
+.tarifs__item-titles-b {
+  background-image: url(../img/frame__02.webp);
+}
 
-.no-webp .tarifs__item-titles-p{
-  background-image: url(../img/frame__03.png); }
+.tarifs__item-titles-p {
+  background-image: url(../img/frame__03.webp);
+}
 
 .tarifs__item-title {
   font-weight: 600;
@@ -703,9 +703,3 @@ footer {
   font-weight: 700;
   font-size: 16px;
 }
-
-.webp .tarifs__item-titles{ background-image: url(../img/frame__01.webp); }
-
-.webp .tarifs__item-titles-b{ background-image: url(../img/frame__02.webp); }
-
-.webp .tarifs__item-titles-p{ background-image: url(../img/frame__03.webp); }
