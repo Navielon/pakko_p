@@ -1,0 +1,69 @@
+//================= Подвал ================================================================================
+footer{
+    background: #F8F8F9;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: rem(40);
+    padding-bottom: rem(20);
+    &__item{
+        margin-bottom: rem(8);
+        transition: .3s;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &__item-title{
+        margin-bottom: rem(14);
+        font-weight: 700;
+        font-size: rem(16);
+    }
+    &__item-l{
+        margin-bottom: rem(24);
+    }
+    &__item-li{
+        max-width: rem(200);
+        margin-bottom: rem(24);
+    }
+    &__nav{
+        margin: 0 rem(66);
+    }
+    &__link-fb{
+        background-image: url(../img/icons/facebook.svg);
+        background-repeat: no-repeat;
+        width: rem(20);
+        height: rem(20);
+        display: inline-block;
+        margin-right: rem(24);
+        padding-left: rem(15);
+        transition: .2s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    &__link-inst{
+        background-image: url(../img/icons/inst.svg);
+        background-repeat: no-repeat;
+        width: rem(20);
+        height: rem(20);
+        display: inline-block;
+        margin-right: rem(24);
+        transition: .2s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    &__link-in{
+        background-image: url(../img/icons/in.svg);
+        background-repeat: no-repeat;
+        width: rem(20);
+        height: rem(20);
+        display: inline-block;
+        transition: .2s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+//*====================================================================================================

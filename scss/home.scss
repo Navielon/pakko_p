@@ -1,0 +1,261 @@
+//================= Главное содержимое ===================================================================================
+.page{
+    background-color: $white;
+}
+.main__container{
+    padding-bottom: rem(130);
+}
+//=================== Тарифы ===================================================================================================================================
+.tarifs{
+text-align: center;
+    &__title{
+        color: $sdark;
+        padding-top: rem(250);
+        margin-bottom: rem(58);
+        font-size: rem(48);
+        font-weight: 700;
+        display: inline-block;
+        max-width: rem(700);
+    }
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        &:hover .tarifs__item{
+            filter:blur(rem(3));
+            opacity:.5;
+            transform: scale(.98);
+            box-shadow:none;
+        }
+        &:hover .tarifs__item-1:hover{
+            transform:scale(1);
+            filter:blur(rem(0));
+            opacity:1;
+            box-shadow: 0 rem(8) rem(20) 0 rgba(0, 0, 0, 0.247);
+        }
+        &:hover .tarifs__item-2:hover{
+            transform:scale(1);
+            filter:blur(0);
+            opacity:1;
+            box-shadow: 0 rem(8) rem(20) 0 rgba(11, 87, 23, 0.562);
+        }
+        &:hover .tarifs__item-3:hover{
+            transform:scale(1);
+            filter:blur(0);
+            opacity:1;
+            box-shadow: 0 rem(8) rem(20) 0 rgba(160, 85, 15, 0.562);
+        }
+    }
+    &__item{
+        padding: 0;
+        width: rem(460);
+        transition:.2s all; 
+        &-titles{
+            background-image: url(../img/frame__01.webp);
+            height: rem(250);
+            width: rem(460);
+            background-repeat: no-repeat;
+            background-size: cover;
+            &-b{
+                background-image: url(../img/frame__02.webp);
+            }
+            &-p{
+                background-image: url(../img/frame__03.webp);
+            }
+        }
+        &-title{
+        font-weight: 600;
+        font-size: rem(21);
+        color: $white;
+        padding-top: rem(148);
+        padding-left: rem(30);
+        }
+        &-text{
+            font-weight: 400;
+            font-size: rem(24);
+            color: $white;
+            padding-left: rem(30);
+            &-1{
+                color: $green;
+                font-weight: 450;
+            }
+            &-2{
+                color: $orange;
+                font-weight: 600;
+            }
+            &-3{
+                color: $white;
+            }
+        }
+    }
+    &__price{
+        &-sm{
+            font-size: rem(48);
+            padding-left: rem(160);
+            color: $white;
+            &-0{
+                padding-left: rem(80);
+                color: $white;
+                font-size: rem(48);
+            }
+            &-1{
+                padding-left: rem(120);
+                color: $white;
+                font-size: rem(48);
+            }
+        }
+        &-m{
+            color: $white;
+            font-size: rem(16);
+            font-weight: 600;
+        }
+    }
+    &__list{
+        &-1{
+            background: rgba(16, 10, 48, 0.07);
+            border-radius: rem(8);
+        }
+        &-2{
+            background: rgba(25, 199, 135, 0.07);
+            border-radius: rem(8);
+        }
+        &-3{
+            background: rgba(252, 185, 52, 0.09);
+            border-radius: rem(8);
+        }
+    }
+    &__lists{
+        padding: rem(16) 0;
+        padding-left: rem(56);
+        
+    }
+    &__li{
+        font-weight: 700;
+        font-size: rem(14);
+        color: $mainColor;
+        margin: rem(15) 0;
+        &-1{
+            position: relative;
+            &::before{
+                content: '';
+                background-image: url(../img/icons/check.svg);
+                display: block;
+                width: rem(20);
+                height: rem(20);
+                position: absolute;
+                left: rem(-35);
+                top: rem(-3);
+                color: $mainColor;
+            }
+        }
+        &-2{
+            position: relative;
+            &::before{
+                content: '';
+                background-image: url(../img/icons/check__green.svg);
+                display: block;
+                width: rem(20);
+                height: rem(20);
+                position: absolute;
+                left: rem(-35);
+                top: rem(-3);
+                color: $mainColor;
+            }
+        }
+        &-3{
+            position: relative;
+            &::before{
+                content: '';
+                background-image: url(../img/icons/check__orange.svg);
+                display: block;
+                width: rem(20);
+                height: rem(20);
+                position: absolute;
+                left: rem(-35);
+                top: rem(-3);
+                color: $mainColor;
+            }
+        }
+    }
+}
+//*========================================================================================================================================================
+//?========================================================================================================================================================
+//============= Блок комментариев ===========================================================================================================================================
+.comments{
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: rem(900);
+    padding-top: rem(150);
+    &__item{
+        width: rem(696);
+        height: 100%;
+        border-radius: rem(8);
+        margin-bottom: rem(40);
+        padding: rem(41);
+        &-1{
+            background: #E8E5FB;
+        }
+        &-2{
+            background: #E8FAF3;
+        }
+        &-3{
+            background: #FDEBEE;
+        }
+        &-4{
+            background: #E6F3FF;
+        }
+        &-5{
+            background: #FFF5E1;
+        }
+    }
+    &__title{
+        font-weight: 700;
+        font-size: rem(48);
+        max-width: rem(696);
+        margin-bottom: rem(37);
+        text-align: center;
+        height: rem(190);
+    }
+    &__info{
+        display: flex;
+        &-user{
+            font-size: rem(16);
+            font-weight: 800;
+            line-height: rem(24);
+        }
+        &-adress{
+            font-size: rem(15);
+            color: $cm;
+        }
+    }
+    &__avatar-1{
+        margin-right: rem(16);
+        height: rem(48);
+        width: rem(48);
+    }
+    &__img{
+        margin-left: auto;
+        align-self: start;
+    }
+    &__text{
+        padding-top: rem(26);
+        font-weight: 400;
+        font-size: rem(17);
+        line-height: rem(30);
+        letter-spacing: rem(0.18);
+    }
+    &__link{
+        display: block;
+        padding-top: rem(20);
+        font-weight: 700;
+        font-size: rem(16);
+        max-width: rem(120);
+        transition: .2s;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+//*====================================================================================================
